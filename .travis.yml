@@ -16,6 +16,16 @@ go:
   - 1.14.x
   - 1.15.x
   - master
+jobs:
+ exclude:
+  - go: master
+    arch: amd64
+  - go: master
+    arch: arm64
+  - go: master
+    arch: ppc64le
+  - go: master
+    arch: s390x
 
 install:
  - go get ./...
